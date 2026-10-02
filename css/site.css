@@ -296,3 +296,4 @@ a.book:hover h3 { color: var(--accent); }
   .nav ul a { font-size: 16px; min-height: 36px; }
   html { scroll-padding-top: 120px; }
 }
+:root { --ghost: #948B7E; }
