@@ -254,3 +254,9 @@ a.book:hover h3 { color: var(--accent); }
 .brand-logo--sm { margin-top: 32px; }
 .brand-logo--sm img { height: 90px; }
 @media (max-width: 860px) { .kitchen-photos { position: static; } }
+/* On phones the menu wraps to 3 rows; don't pin it to the top or it covers the page */
+@media (max-width: 860px) { .nav { position: static; } html { scroll-padding-top: 0; } }
+.contact-list { max-width: 640px; margin-top: 32px; }
+.contact-list a { font-family: var(--display); font-size: clamp(22px, 2.6vw, 30px); text-decoration: none; display: block; padding: 4px 0; }
+/* Phones: show the whole photo so the head is never cropped */
+@media (max-width: 860px) { .hero img { height: auto; min-height: 0; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 30%; } }
