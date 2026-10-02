@@ -297,3 +297,20 @@ a.book:hover h3 { color: var(--accent); }
   html { scroll-padding-top: 120px; }
 }
 :root { --ghost: #948B7E; }
+
+/* ---------- Phone menu: slim bar with a Menu button ---------- */
+.nav__toggle { display: none; }
+@media (max-width: 860px) {
+  .nav { position: sticky; top: 0; }
+  .nav .wrap { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; min-height: 52px; padding-top: 0; padding-bottom: 0; }
+  .nav__toggle {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px 0 16px;
+    background: none; border: 0; cursor: pointer;
+    font-family: var(--label); font-size: 18px; letter-spacing: .08em; color: var(--accent);
+  }
+  .nav ul { display: none; width: 100%; flex-direction: column; flex-wrap: nowrap; gap: 0; padding: 4px 0 12px; }
+  .nav--open ul { display: flex; }
+  .nav ul a { font-size: 20px; min-height: 44px; }
+  html { scroll-padding-top: 64px; }
+}
+@media (max-width: 860px) { .nav--open { background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,.08); } }

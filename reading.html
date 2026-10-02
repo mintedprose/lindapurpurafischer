@@ -11,7 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Jost:wght@400;600;800;900&display=swap">
-<link rel="stylesheet" href="css/site.css?v=43">
+<link rel="stylesheet" href="css/site.css?v=45">
+<script src="js/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -19,7 +20,8 @@
 <nav class="nav" aria-label="Site">
   <div class="wrap">
     <a class="nav__name" href="index.html">Linda Purpura Fischer</a>
-    <ul>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <ul id="site-menu">
       <li><a href="index.html">Work</a></li>
       <li><a href="reading.html" aria-current="page">Books</a></li>
       <li><a href="listening.html">Music</a></li>
