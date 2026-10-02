@@ -260,3 +260,39 @@ a.book:hover h3 { color: var(--accent); }
 .contact-list a { font-family: var(--display); font-size: clamp(22px, 2.6vw, 30px); text-decoration: none; display: block; padding: 4px 0; }
 /* Phones: show the whole photo so the head is never cropped */
 @media (max-width: 860px) { .hero img { height: auto; min-height: 0; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 30%; } }
+/* All-white backgrounds (no tan) */
+.section--warm { background: var(--paper); }
+.section--warm .ghost { color: var(--ghost); }
+.wholesale { background: var(--paper); border: 1px solid var(--rule); border-top: 2px solid var(--accent); }
+.hero { background: var(--paper); }
+/* Darker grey for the big "Get ___" titles */
+:root { --ghost: #C8C2B8; }
+.ghost, .section--warm .ghost { color: var(--ghost); }
+.ghost--about { font-size: clamp(54px, 10vw, 140px); margin-bottom: 16px; }
+.mantra--top { margin: 0 0 48px; font-size: clamp(22px, 2.4vw, 28px); }
+.ghost--about { font-size: clamp(46px, 7.2vw, 100px); margin-bottom: 28px; }
+.about__text .kicker { margin-bottom: 18px; }
+.ghost--about { margin-bottom: 44px; }
+/* One size for every big grey title, small enough that the longest ("Get to Know Me") fits on one line */
+.ghost, .ghost--about { font-size: clamp(52px, 9.6vw, 136px); }
+.about__figure { margin: 0; }
+.about__figure figcaption { margin-top: 12px; font-family: var(--label); font-size: 18px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+:root { --ghost: #B3ACA1; }
+/* Phones: compact menu that stays fully visible: name on top, all links on ONE swipeable row */
+@media (max-width: 860px) {
+  .nav { position: sticky; top: 0; }
+  .nav .wrap { padding-top: 8px; padding-bottom: 0; gap: 0; }
+  .nav__name { font-size: 17px; }
+  .nav ul { flex-wrap: nowrap; overflow-x: auto; gap: 0 18px; width: 100%; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .nav ul::-webkit-scrollbar { display: none; }
+  .nav ul li { flex: 0 0 auto; }
+  .nav ul a { font-size: 17px; min-height: 40px; }
+  html { scroll-padding-top: 96px; }
+}
+/* Center the About photo caption */
+.about__figure figcaption { text-align: center; }
+@media (max-width: 860px) {
+  .nav ul { flex-wrap: wrap; overflow: visible; gap: 0 16px; }
+  .nav ul a { font-size: 16px; min-height: 36px; }
+  html { scroll-padding-top: 120px; }
+}
