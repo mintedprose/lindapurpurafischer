@@ -319,3 +319,5 @@ a.book:hover h3 { color: var(--accent); }
   .nav__icon { display: block; }
   .nav ul { align-items: center; text-align: center; }
 }
+.resume-link { margin-top: 14px; font-family: var(--label); font-size: 19px; letter-spacing: .06em; }
+.resume-link a { display: inline-flex; align-items: center; min-height: 44px; }
