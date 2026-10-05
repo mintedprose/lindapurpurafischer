@@ -336,3 +336,8 @@ a.book:hover h3 { color: var(--accent); }
 /* Vision lines: regular weight, not bold */
 .vision__list li { font-weight: 400; }
 .vision__head { font-size: clamp(30px, 4.2vw, 50px); line-height: 1.08; }
+/* Links inside text are red so readers can tell they're links */
+main p a, main li a:not(.album):not(.book), .foot a, main .links a { color: var(--accent); text-decoration-color: currentColor; }
+main p a:hover, main li a:hover, .foot a:hover, main .links a:hover { color: var(--ink); }
+.nav a, .items a, .contact-list a { color: inherit; }
+.contact-list a { color: var(--accent); }
