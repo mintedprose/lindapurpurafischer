@@ -346,3 +346,5 @@ main p a:hover, main li a:hover, .foot a:hover, main .links a:hover { color: var
 .vision__list { gap: 16px; margin-top: 28px; }
 .vision__list li { line-height: 1.3; }
 .vision__body { margin-top: 24px; }
+.vision__payoff { margin-top: 22px; font-family: var(--display); font-weight: 600; font-size: clamp(20px, 2.1vw, 25px); line-height: 1.35; color: var(--accent); max-width: 900px; }
+.vision__payoff { color: var(--ink); }
