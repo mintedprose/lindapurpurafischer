@@ -341,3 +341,8 @@ main p a, main li a:not(.album):not(.book), .foot a, main .links a { color: var(
 main p a:hover, main li a:hover, .foot a:hover, main .links a:hover { color: var(--ink); }
 .nav a, .items a, .contact-list a { color: inherit; }
 .contact-list a { color: var(--accent); }
+.vision__list { max-width: none; }
+.vision__body { max-width: 900px; }
+.vision__list { gap: 16px; margin-top: 28px; }
+.vision__list li { line-height: 1.3; }
+.vision__body { margin-top: 24px; }
