@@ -352,3 +352,6 @@ main p a:hover, main li a:hover, .foot a:hover, main .links a:hover { color: var
 /* ---------- Knowledge transfer ---------- */
 #knowledge { scroll-margin-top: 72px; }
 #knowledge .prose { margin-bottom: 48px; }
+
+/* Back-to-back sections share one gap, not two */
+.section + .section { padding-top: 8px; }
